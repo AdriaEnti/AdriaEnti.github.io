@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mi pagina de inicio</title>
+    <style>
+        body {
+            background-color: black;
+            color: #ffffff;
+        }
+        header nav ul{
+        display:flex;
+		justify-content:center;
+			justify-content:space-around;
+			background:black;
+			
+		list-style:none;
+		padding:0;
+		margin:0;
+        }
+        h1 {
+            color: #ffffff;
+        }
+        nav {
+            background-color: white;
+        }
+        p {
+            border: 4px dotted yellow;
+        }
+        ul {
+            list-style: none;
+        }
+        footer {
+            text-align: center;
+            background-color: #666666;
+            color: #ffffff;
+            border-top: 4px solid #000000;
+        }
+        main {
+            border: 4px ridge #ffffff;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        main a {
+            text-decoration: none;
+            color: #ffffff;
+            transition: font-size 0.3s, font-style 0.3s;
+        }
+        main a:hover {
+            font-size: 1.2em;
+            font-style: italic;
+        }
+		video {
+			width: 20%;
+			height: auto;
+		}
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Adrià Olmo Torregrosa</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Portada</a></li>
+            <li><a href="cv.html">CV</a></li>
+            <li><a href="about_me.html">Sobre mi</a></li>
+            <li><a href="contact.html">Contacto</a></li>
+			<li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+	<video controls> 
+		<source src= "VIDEO.mp4" type="video/mp4">
+	</video>
+</header>
+
+<main>
+    <h2>Estudios</h2>
+    <ul>
+        <li><a href="https://enti.cat/area-ciberseguretat/cicle-superior-ciberseguretat/">ENTI - Escola de Noves Tecnologies Interactives, CGFS Ciberseguretat, 2023-2025</a></li>
+        <li><a href="https://www.salesianssarria.com/grado-medio/sistemas-microinformaticos-redes">Salesians Sarrià, CFGM Sistemes Microinformàtics i Xarxes, 2021-2023</a></li>
+    </ul>
+
+    <h2>Experiencia Laboral</h2>
+    <ul>
+        <li>Ayudante de camarero, Hotels Guitart, jul.2022 - ago.2022</li>
+        <li>Estudiante de prácticas Informaticas, El Corte Inglés, oct.2023 - jun.2023</li>
+        <li>Ayudante de camarero, Hotels Guitart, jul.2023 - ago.2023</li>
+    </ul>
+
+    <h2>Idiomas</h2>
+    <ul>
+			<li>Francés B1</li>
+			<li>Inglés B1</li>
+			<li>Catalán Nativo</li>
+			<li>Español Nativo</li>
+    </ul>
+
+    <h2>Galería de Imágenes</h2>
+			<ul class="gallery">
+				<li><img src="cat.jpg"> </li>
+				<li><img src="fox.jpg"> </li>
+				<li><img src="tigre.jpg"> </li>
+			</ul>
+</main>
+</body>
+</html>

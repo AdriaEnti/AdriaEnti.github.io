@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>minijuego</title>
+    <style>
+        body {
+            background-color: black;
+            color: #ffffff;
+        }
+        header nav ul{
+        display:flex;
+		justify-content:center;
+			justify-content:space-around;
+			background:black;
+			
+		list-style:none;
+		padding:0;
+		margin:0;
+        }
+        h1 {
+            color: #ffffff;
+        }
+        nav {
+            background-color: white;
+        }
+        }
+        ul {
+            list-style: none;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>JUEGO ADIVINANZAS</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Portada</a></li>
+            <li><a href="cv.html">CV</a></li>
+            <li><a href="about_me.html">Sobre mi</a></li>
+            <li><a href="contact.html">Contacto</a></li>
+			<li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+</header>
+	<form>
+			<h2>Adivina el numero</h2>
+			<p>Adivina el numero entre 1 y 100</p>
+			<p id="mensaje"><em>Haz click</em></p>
+			<p><label for="numero"> numero: </label> <input type="number" name="numero" id="numero" placeholder="Escribe un numero del 1 al 100" /></p>
+			<p><input type="button" value="Adivina" id="adivina" /></p>
+	</form>
+	<script>
+		let adivina = document.getElementById("adivina");
+		let numero_random = Math.floor(Math.random()*100) + 1;
+		adivina.addEventListener("click", function(event) {
+			
+			const numero = document.getElementById("numero").value;
+			
+			let mensaje = document.getElementById("mensaje");
+			
+			if (numero === ""){
+				console.log("Has de introducir un numero!");
+				
+				mensaje.innerHTML = "Has de introducir un numero!";
+				
+				return;
+			}
+			
+			if (numero > numero_random) {
+			console.log("El numero es menor");
+			
+							mensaje.innerHTML = "El numero es menor!";
+			}
+			else if (numero < numero_random) {
+			console.log("El numero es mayor");
+			
+							mensaje.innerHTML = "El numero es mayor!";
+			}
+			else{
+			console.log("Has ganado");
+			
+							mensaje.innerHTML = "Has ganado!";
+			}
+		});
+	</script>
+</body>
+<html> 

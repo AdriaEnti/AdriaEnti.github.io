@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LOGIN O REGISTRO</title>
+    <style>
+        body {
+            background-color: black;
+            color: #ffffff;
+        }
+        header nav ul{
+        display:flex;
+		justify-content:center;
+			justify-content:space-around;
+			background:black;
+			
+		list-style:none;
+		padding:0;
+		margin:0;
+        }
+        h1 {
+            color: #ffffff;
+        }
+        nav {
+            background-color: white;
+        }
+        }
+        ul {
+            list-style: none;
+        }
+    </style>
+</head>
+
+<header>
+    <h1>LOGIN O REGISTRO</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Portada</a></li>
+            <li><a href="cv.html">CV</a></li>
+            <li><a href="about_me.html">Sobre mi</a></li>
+            <li><a href="contact.html">Contacto</a></li>
+			<li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+</header>
+
+	<form>
+			<p><label for="login_form"> Login: </label> <input type="text" name="login" id="login_form" placeholder="Tu nombre de usuario" /></p>
+			<p><label for="login_form"> Password: </label> <input type="password" name="pass" id="pass_form" placeholder="Tu contrasena" /></p>
+			<p><input type="submit" value="Loign" /></p>
+	</form>
+	<script>
+const user = document.getElementById("user")
+const pass = document.getElementById("password")
+const form = document.getElementById("form")
+const parrafo = document.getElementById("warnings")
+
+form.addEventListener("submit", e=>{
+	e.preventDefault()
+	let warnings = ""
+	let entrar = false
+	parrafo.innerHTML = ""
+	if(user.value.length <4){
+		warnings += `El nombre de usuario es muy corto <br>`
+		entrar = true
+	}
+	if(pass.value.length <6){
+		warnings += `La contraseña debe tener minimo 6 caracteres <br>`
+		entrar = true
+	}
+	
+	if(entrar){
+		parrafo.innerHTML = warnings
+	}else{
+		parrafo.innerHTML = "Enviado"
+})
+	</script>
+<html> 
