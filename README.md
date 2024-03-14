@@ -74,3 +74,7 @@ Para añadir una imágen, hemos de dar una descirpción y el nombre de la imagen
 ![Imagen de la negra](brian-fraser-337137-1030x687.jpg)
 
 La sintaxis es: exclamación seguido de una descipción dentro de llaves angualadas, seguido del nombre de la imagen entre paréntesis (sin espacios entre exclamación, llaves anguladas y paréntesis).
+
+### Enlaces 
+
+Los enlaces son parecidos a las imágenes, la diferencia es que no llevan exclamación delante y se ppueden introducir dentro de frases [como esta](https://enti.cat).
