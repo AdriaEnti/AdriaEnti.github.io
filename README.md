@@ -1,4 +1,4 @@
-# AdriaEnti.github.io
+AdriaEnti.github.io
 
 Esto formará parte de la documentación de la UF1. Revisar el codigo par entenderlo mejor.
 
@@ -78,3 +78,15 @@ La sintaxis es: exclamación seguido de una descipción dentro de llaves anguala
 ### Enlaces 
 
 Los enlaces son parecidos a las imágenes, la diferencia es que no llevan exclamación delante y se ppueden introducir dentro de frases [como esta](https://enti.cat).
+
+### Bloques de cita
+
+Los bloques de cita nos ayudan a destacar el código o frases de manera especial.
+
+> Esto es una cita.
+
+Para la cita, se utiliza el símbolo mayor qué seguido de un espacio.
+
+> Esto es una cita
+> Con múltiples **líneas**
+> > Esto es una cita dentro de otra
